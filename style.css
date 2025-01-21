@@ -1,10 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.quicksand {
+	font-family: "Quicksand", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
 
 
 /* Shared section END */
 
 :root{
 	--clr-orange:#eb3b00;
-	--clr-royalblue:#6736fa;
+	--clr-royalblue: #01ACFD;
 	--clr-lightgreen:#93b500;
 	--clr-purple:#d500ff;
 	--clr-black:#000000;
@@ -18,9 +30,10 @@
 	/* it should be a unique gradiant color */
 	--clr-hover-bg:#2cff24;        
 	--clr-hover-text: #fff;
+	--clr-hover-bg: linear-gradient(to right, #7b4397 0%, #dc2430 51%, #7b4397 100%);
 
 
-	--radius:8px;
+	--radius: 10px;
 	--padding:8px;
 
 	
@@ -33,6 +46,7 @@
 body{
 	margin: 0;
 	padding: 0;
+	font-family: quicksand;
 }
 
 header, main{
@@ -55,12 +69,11 @@ header, main{
 		color: white;
 		box-shadow: 0 0 20px #eee;
 		padding: var(--padding);
-	
 		border-radius: var(--radius);
-	
 		border: none;
-			cursor: pointer;
+		cursor: pointer;
 			background-color: var(--clr-darkgray);
+		box-shadow: 2px 5px 10px gray;
 	a{
 		text-decoration: none;
 		color: var(--clr-white);
@@ -69,7 +82,7 @@ header, main{
 
 
 .btn:hover{
-	background-image: linear-gradient(to right, #7b4397 0%, #dc2430 51%, #7b4397 100%);
+	background-image: var(--clr-hover-bg);
 	background-position: right center;
 	color: var(--clr-hover-text);
 	a{
@@ -184,14 +197,39 @@ a{
 /* Curriculum Section  START  */
 .curriculum{
 	flex-direction: column;
-
-	.card-wrapper{
-		gap: 20px;
+	background-image: url('assets/bg.png');
 	}
 
-	.card{
-		
+.card-wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 30px;
 	}
+
+.card {
+	border-radius: 1rem;
+	text-align: center;
+	padding: 2rem;
+	box-shadow: 0 0 20px #eee;
+}
+
+.card-caption {
+	font-size: 1.5rem;
+	font-weight: 800;
+	line-height: 30px;
+	color: #202020;
+}
+
+.card-description {
+	color: #808080;
+}
+.btn-card {
+	border: none;
+	background: transparent;
+	color: #64C8FF;
+}
+.btn-card a {
+	text-decoration: none;
 }
 /* --------------------Curriculum Section  END----------------------------  */
 
@@ -240,6 +278,12 @@ a{
 	.banner-description{
 		text-align: center;
 	}
+
+
+.curriculum .card-wrapper{
+	grid-template-columns: 1fr;
+}
+
 
 }
 

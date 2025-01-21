@@ -23,13 +23,12 @@
 }
 
 
-
 .cta-btn {
 	position: relative;
 	display: inline-block;
 	margin: 20px 0 0 20px;
 	color: #fff;
-	box-shadow: 4px 5px 27px 4px rgba(220, 120, 184, 0.85);
+	box-shadow: 2px 5px 10px gray;
 	font-size: 21px;
 	border-radius: 30px;
 	overflow: hidden;
