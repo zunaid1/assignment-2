@@ -1,0 +1,235 @@
+
+
+/* Shared section END */
+
+:root{
+	--clr-orange:#eb3b00;
+	--clr-royalblue:#6736fa;
+	--clr-lightgreen:#93b500;
+	--clr-purple:#d500ff;
+	--clr-black:#000000;
+	--clr-sayan:#00d5ff;
+	--clr-lightorange:#c59180;
+	--clr-white:#ffffff;
+	--clr-gray:#e8e6e6;
+	--clr-lightgray:#b6b6b6;
+	--clr-darkgray:#928c8c;
+
+	/* it should be a unique gradiant color */
+	--clr-hover-bg:#2cff24;        
+	--clr-hover-text:#ff1e1e;
+
+
+	--radius:8px;
+	--padding:8px;
+
+	
+}
+
+.dev-border{
+	border: dotted 3px red;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+header, main{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.flex{
+	display: flex;
+	
+}
+
+.btn{
+	padding: var(--padding);
+	border-radius: var(--radius);
+	border: none;
+	cursor: pointer;
+	background-color: var(--clr-darkgray);
+
+	a{
+		text-decoration: none;
+		color: var(--clr-white);
+	}
+}
+
+.btn:hover{
+	background-color: var(--clr-hover-bg);
+	color: var(--clr-hover-text);
+	a{
+		color: var(--clr-hover-text);
+	}
+}
+
+
+.btn-orange{
+	background-color: var(--clr-orange);
+	width: 100px;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.btn-black{
+	background-color: var(--clr-black);
+	width: 150px;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.hide{
+	display: none;
+}
+.show-block{
+	display: block;
+}
+
+.show-inline{
+	display: inline-block;
+}
+
+.section-default {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.section-caption{
+	text-align: center;
+	font-size: 40px;
+	font-weight: 600;
+	margin: 20px;
+}
+/* ----------Shared section END---------------------------------*/
+
+/* Nav Section START */
+.nav{
+	justify-content: space-between;
+	align-items: center;
+	padding: var(--padding);
+
+	.brand-name{
+		text-transform: uppercase;
+}
+
+ul> li{
+	list-style: none;
+	margin-right: 20px;
+}
+
+a{
+	text-decoration: none;
+}
+.tab-home{
+	color: var(--clr-orange);
+}
+.tab-about{
+	color: var(--clr-royalblue);
+}
+
+.tab-facilities{
+	color: var(--clr-sayan);
+}
+
+.tab-admission{
+	color: var(--clr-purple);
+}
+}
+/* ----------Nav section END---------------------------------*/
+
+
+/* Banner Section Start  */
+.banner{
+	justify-content: space-between;
+	gap: 50px;
+
+	.banner-caption{
+		font-size: 3rem;
+		font-weight: 600;
+		color: var(--clr-black);
+	}
+	.Empowering{
+		color: var(--clr-orange);
+	}
+	.towards{
+		color: var(--clr-royalblue);
+	}
+
+	.banner-description{
+		/* text-align: justify; */
+		color: var(--clr-darkgray);
+		margin-bottom: 30px;
+	}
+
+}
+/* ----------Banner section END---------------------------------*/
+
+
+/* Curriculum Section  START  */
+.curriculum{
+	flex-direction: column;
+
+	.card-wrapper{
+		gap: 20px;
+	}
+
+	.card{
+		
+	}
+}
+/* --------------------Curriculum Section  END----------------------------  */
+
+
+
+
+
+
+
+/* ===============================================================
+----------------Responsive START
+=============================================================== */
+
+@media screen and (max-width:576px) {
+
+	/* #menu-icon{
+		display: block;
+	} */
+	 .tabs{
+		display: none;
+	 }
+	 #tab-contact{
+		display: none;
+	 }
+
+	#menu-icon
+	{
+		display: block;
+	}
+
+	.banner{
+		flex-direction: column-reverse;
+		gap: 10px;
+	}
+
+	.banner-img img
+	 {
+		width: 100%;
+	}
+
+	.banner-content,
+	.banner-description{
+		text-align: center;
+	}
+
+	.banner-description{
+		text-align: center;
+	}
+
+}
+
+/* ---------------Responsive END---------------------------------------- */
