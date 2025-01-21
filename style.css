@@ -17,7 +17,7 @@
 
 	/* it should be a unique gradiant color */
 	--clr-hover-bg:#2cff24;        
-	--clr-hover-text:#ff1e1e;
+	--clr-hover-text: #fff;
 
 
 	--radius:8px;
@@ -46,20 +46,31 @@ header, main{
 }
 
 .btn{
-	padding: var(--padding);
-	border-radius: var(--radius);
-	border: none;
-	cursor: pointer;
-	background-color: var(--clr-darkgray);
-
+	margin: 10px;
+	
+		text-align: center;
+		text-transform: uppercase;
+		transition: 0.5s;
+		background-size: 200% auto;
+		color: white;
+		box-shadow: 0 0 20px #eee;
+		padding: var(--padding);
+	
+		border-radius: var(--radius);
+	
+		border: none;
+			cursor: pointer;
+			background-color: var(--clr-darkgray);
 	a{
 		text-decoration: none;
 		color: var(--clr-white);
 	}
 }
 
+
 .btn:hover{
-	background-color: var(--clr-hover-bg);
+	background-image: linear-gradient(to right, #7b4397 0%, #dc2430 51%, #7b4397 100%);
+	background-position: right center;
 	color: var(--clr-hover-text);
 	a{
 		color: var(--clr-hover-text);
