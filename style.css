@@ -26,10 +26,10 @@
 	--clr-skyblue: #87CEEB;
 	--clr-lightgreen:#93b500;
 	--clr-purple:#d500ff;
-	--clr-lightpurple: #5D58EF;
+	--clr-lightpurple: #F2E8FF;
 	--clr-black:#000000;
 	--clr-sayan: #05D4DF;
-		--clr-lightorange: #f3d0c4;
+		--clr-lightorange: #FFF4DC;
 	--clr-white:#ffffff;
 	--clr-gray:#e8e6e6;
 	--clr-lightgray:#b6b6b6;
@@ -40,7 +40,6 @@
 	--clr-hover-text: #fff;
 	--clr-hover-bg: linear-gradient(to right, #7b4397 0%, #dc2430 51%, #7b4397 100%);
 	--clr-hover-bg2: linear-gradient(to right, #7b4397 0%, #dc2430 51%, #7b4397 100%);
-
 
 	--radius: 10px;
 	--padding:8px;
@@ -332,12 +331,12 @@ a{
 }
 #curriculum-card-kinder {
 	background-color: white;
-	background-image: linear-gradient(#b8dff3, white);
+	background-image: linear-gradient(#DEF5FF, white);
 }
 
 #curriculum-card-kinder:hover {
 	background-color: white;
-	background-image: linear-gradient(white, #b8dff3);
+	background-image: linear-gradient(white, #DEF5FF);
 	;
 }
 
@@ -425,6 +424,8 @@ a{
 .story {
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
+		align-items: center;
 	background-image: url('assets/bg.png');
 		/* background-color: white;
 			background-image: linear-gradient(white, #e9c17c);
@@ -446,6 +447,9 @@ a{
 	gap: 10px;
 }
 
+.story-left-container:hover {
+	background-color: var(--clr-lightorange);
+}
 .story-left-container img,
 .story-right-img img {
 	width: 100%;
@@ -460,10 +464,16 @@ a{
 	box-shadow: 2px 5px 10px gray;
 }
 
+.story-right-card:hover {
+	background-color: var(--clr-lightorange);
+}
 .story-left-description,
 .story-right-card-desc {
 	padding: 20px;
 	position: relative;
+}
+
+.story-right-card-desc:hover {
 
 }
 
@@ -663,6 +673,16 @@ grid-template-columns: repeat(2, 1fr);
 	text-align: left;
 	margin-left: 5;
 	padding-left: 0;
+}
+.btn {
+	font-size: 15px;
+	padding: 16px 20px;
+}
+
+.btn-green,
+.btn-purple {
+	font-size: 10px;
+	padding: 8px 10px;
 }
 }
 
