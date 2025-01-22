@@ -208,6 +208,7 @@ background-image: url('assets/bg.png'), url('assets/bg.png'), url('assets/bg.png
 		text-transform: uppercase;
 }
 
+
 ul> li{
 	list-style: none;
 	margin-right: 20px;
@@ -232,6 +233,7 @@ a{
 }
 
 }
+
 
 /* ----------Nav section END---------------------------------*/
 
@@ -415,13 +417,20 @@ a{
 
 
 
+
+
 /* --------------------Curriculum Section  END----------------------------  */
 
 /* Story Section START */
 .story {
 	flex-direction: column;
-	/* justify-content: space-between; */
 	align-items: center;
+	background-image: url('assets/bg.png');
+		/* background-color: white;
+			background-image: linear-gradient(white, #e9c17c);
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: top left, top right, left bottom, right bottom; */
 }
 
 .story-card-wrapper {
@@ -467,9 +476,8 @@ a{
 }
 .set-story-btn-position {
 	position: absolute;
-	top: -30px;
-	left: 50px;
-
+	top: -35px;
+		left: 40px;
 }
 
 
@@ -606,7 +614,8 @@ grid-template-columns: repeat(2, 1fr);
 .footer {
 	grid-template-columns: 1fr;
 	grid-row-gap: 10px;
-		padding: 20px;
+	padding: 20px;
+	text-align: left;
 }
 
 .footer-brand {
@@ -616,10 +625,45 @@ grid-template-columns: repeat(2, 1fr);
 }
 
 .brand-name {
-	font-size: 16px;
+	font-size: 25px;
 	display: inline-block;
 }
 
+.set-story-btn-position {
+	position: absolute;
+	top: -35px;
+	left: 20px;
+	font-size: 12px;
+}
+
+#nav-brand-name {
+	display: none;
+
+}
+
+.footer-icon-caption {
+	text-align: left;
+}
+
+
+.footer-social-icons {
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.social-icons {
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: 20px;
+}
+
+
+.footer-menus ul {
+	/* background-color: tomato; */
+	text-align: left;
+	margin-left: 5;
+	padding-left: 0;
+}
 }
 
 /* ---------------Responsive END---------------------------------------- */
