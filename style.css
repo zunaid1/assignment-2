@@ -218,6 +218,27 @@ a{
 /* ----------Nav section END---------------------------------*/
 
 
+/* Marquee Section START */
+.scrolling-text-container {
+	display: flex;
+	align-items: center;
+	background-color: var(--clr-white);
+	margin-top: 40px;
+}
+
+.scrolling-text-container span {
+	position: relative;
+	display: inline-block;
+	flex-shrink: 0;
+	padding: 8px 20px;
+	background: var(--clr-orange);
+	color: var(--clr-white);
+	clip-path: polygon(0 0, 85% 0, 100% 100%, 0 100%);
+	font-weight: 600;
+
+}
+
+/* -----------Marquee Section END------------- */
 /* Banner Section Start  */
 .banner{
 	justify-content: space-between;
