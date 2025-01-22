@@ -21,13 +21,14 @@
 /* Shared section END */
 
 :root{
-	--clr-orange: #ff4102;
+	--clr-orange: #FFA500;
 	--clr-royalblue: #01ACFD;
+	--clr-skyblue: #87CEEB;
 	--clr-lightgreen:#93b500;
 	--clr-purple:#d500ff;
-	--clr-lightpurple: #de9deb;
+	--clr-lightpurple: #5D58EF;
 	--clr-black:#000000;
-	--clr-sayan: #3CD8E8;
+	--clr-sayan: #05D4DF;
 		--clr-lightorange: #f3d0c4;
 	--clr-white:#ffffff;
 	--clr-gray:#e8e6e6;
@@ -64,10 +65,22 @@ header,
 }
 
 main {
-	background-image: url('assets/bg.png');
+background-image: url('assets/bg.png'), url('assets/bg.png'), url('assets/bg.png'), url('assets/bg.png');
 	background-color: white;
-	background-image: linear-gradient(white, #ffa60b);
+	background-image: linear-gradient(white, #e9c17c);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: top left, top right, left bottom, right bottom;
+	
+		/* background: linear-gradient(white, #f1d39f), url("/assets/bg.png") no-repeat center, lightblue;
+								background-size: contain;
+							background-position: 100%; */
+	
+		/* background-image: url('../images/developer.png'), url(../images/header_bg.png);
+							background-repeat: no-repeat;
+							background-position: top left, bottom right; */
 }
+
 .flex{
 	display: flex;
 	
@@ -176,6 +189,7 @@ main {
 	font-weight: 600;
 	margin: 20px;
 }
+
 .card-default {
 	/* background-color: var(--clr-white);
 	border-radius: 10px; */
@@ -184,6 +198,8 @@ main {
 
 /* Nav Section START */
 .nav{
+	/* position: sticky;
+																						top: 0; */
 	justify-content: space-between;
 	align-items: center;
 	padding: var(--padding);
@@ -204,7 +220,7 @@ a{
 	color: var(--clr-orange);
 }
 .tab-about{
-	color: var(--clr-royalblue);
+	color: var(--clr-skyblue);
 }
 
 .tab-facilities{
@@ -212,9 +228,11 @@ a{
 }
 
 .tab-admission{
-	color: var(--clr-purple);
+	color: var(--clr-lightpurple);
 }
+
 }
+
 /* ----------Nav section END---------------------------------*/
 
 
@@ -270,12 +288,14 @@ a{
 .curriculum{
 	flex-direction: column;
 	align-items: center;
+	background-image: url('/assets/bg.png');
 	}
 
 .curriculum-card-wrapper {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-column-gap: 30px;
+	margin-top: 20px;
 	}
 
 .curriculum-card {
@@ -373,7 +393,7 @@ a{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: tomato;
+	background-color: var(--clr-orange);
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
@@ -387,6 +407,11 @@ a{
 	margin-right: 8px;
 }
 
+.greater-container:hover,
+.less-container:hover {
+	background-color: var(--clr-black);
+	color: var(--clr-white);
+}
 
 
 
@@ -433,6 +458,13 @@ a{
 
 }
 
+.story-right-card-caption {
+	margin-top: 50px;
+	font-weight: 800;
+	line-height: 28px;
+
+
+}
 .set-story-btn-position {
 	position: absolute;
 	top: -30px;
@@ -468,6 +500,13 @@ a{
 	
 .footer-menus ul {
 					list-style: none;
+					line-height: 2;
+					}
+					
+					.footer-menus ul li:first-child a {
+						color: var(--clr-white);
+						font-size: 20px;
+						font-weight: 600;
 }
 	
 				.footer-menu {
@@ -506,7 +545,7 @@ a{
 		display: none;
 	 }
 .nav {
-	border-bottom: 4px solid var(--clr-orange);
+	border-bottom: 2px solid var(--clr-orange);
 	padding-bottom: 25px;
 }
 #tab-contact,
@@ -570,7 +609,16 @@ grid-template-columns: repeat(2, 1fr);
 		padding: 20px;
 }
 
+.footer-brand {
+	/* background-color: tomato; */
+	width: 100%;
 
+}
+
+.brand-name {
+	font-size: 16px;
+	display: inline-block;
+}
 
 }
 
