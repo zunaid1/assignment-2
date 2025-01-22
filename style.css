@@ -390,19 +390,6 @@ a{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* --------------------Curriculum Section  END----------------------------  */
 
 /* Story Section START */
@@ -453,6 +440,7 @@ a{
 
 }
 
+
 .story-card-wrapper {
 	margin-bottom: 40px;
 }
@@ -467,7 +455,7 @@ a{
 	grid-template-columns: repeat(3, 1fr);
 	grid-column-gap: 20px;
 	padding: 80px;
-
+	margin-top: -20px;
 }
 
 .footer-brand-info {
@@ -556,6 +544,9 @@ a{
 	grid-gap: 20px;
 }
 
+.arrow-container {
+	display: none;
+}
 /* .story-card-wrapper{
 	display: grid;
 grid-template-columns: repeat(2, 1fr);
