@@ -11,17 +11,24 @@
 	font-style: normal;
 }
 
+.raleway {
+	font-family: "Raleway", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
 
 /* Shared section END */
 
 :root{
-	--clr-orange:#eb3b00;
+	--clr-orange: #ff4102;
 	--clr-royalblue: #01ACFD;
 	--clr-lightgreen:#93b500;
 	--clr-purple:#d500ff;
+	--clr-lightpurple: #de9deb;
 	--clr-black:#000000;
-	--clr-sayan:#00d5ff;
-	--clr-lightorange:#c59180;
+	--clr-sayan: #3CD8E8;
+		--clr-lightorange: #f3d0c4;
 	--clr-white:#ffffff;
 	--clr-gray:#e8e6e6;
 	--clr-lightgray:#b6b6b6;
@@ -31,6 +38,7 @@
 	--clr-hover-bg:#2cff24;        
 	--clr-hover-text: #fff;
 	--clr-hover-bg: linear-gradient(to right, #7b4397 0%, #dc2430 51%, #7b4397 100%);
+	--clr-hover-bg2: linear-gradient(to right, #7b4397 0%, #dc2430 51%, #7b4397 100%);
 
 
 	--radius: 10px;
@@ -49,15 +57,22 @@ body{
 	font-family: quicksand;
 }
 
-header, main{
+header,
+.main-content-wrapper {
 	width: 90%;
 	margin: 0 auto;
 }
 
+main {
+	background-image: url('assets/bg.png');
+	background-color: white;
+	background-image: linear-gradient(white, #ffa60b);
+}
 .flex{
 	display: flex;
 	
 }
+
 
 .btn{
 	margin: 10px;
@@ -72,7 +87,7 @@ header, main{
 		border-radius: var(--radius);
 		border: none;
 		cursor: pointer;
-			background-color: var(--clr-darkgray);
+		background-color: var(--clr-darkgray);
 		box-shadow: 2px 5px 10px gray;
 	a{
 		text-decoration: none;
@@ -98,6 +113,17 @@ header, main{
 	font-size: 16px;
 }
 
+.btn-sayan {
+	background-color: var(--clr-sayan);
+	width: auto;
+	font-weight: 600;
+	font-size: 16px;
+	padding: 14px 18px;
+	border-radius: 45px;
+	font-weight: 600;
+	font-family: "Railway", serif;
+
+}
 .btn-black{
 	background-color: var(--clr-black);
 	width: 150px;
@@ -105,6 +131,27 @@ header, main{
 	font-size: 16px;
 }
 
+.btn-purple {
+	background-color: var(--clr-purple);
+	width: auto;
+	font-weight: 600;
+	font-size: 16px;
+	padding: 14px 18px;
+	border-radius: 45px;
+	font-weight: 600;
+	font-family: "Railway", serif;
+}
+
+.btn-green {
+	background-color: var(--clr-lightgreen);
+	width: auto;
+	font-weight: 600;
+	font-size: 16px;
+	padding: 14px 18px;
+	border-radius: 45px;
+	font-weight: 600;
+	font-family: "Railway", serif;
+}
 .hide{
 	display: none;
 }
@@ -128,6 +175,10 @@ header, main{
 	font-size: 40px;
 	font-weight: 600;
 	margin: 20px;
+}
+.card-default {
+	/* background-color: var(--clr-white);
+	border-radius: 10px; */
 }
 /* ----------Shared section END---------------------------------*/
 
@@ -197,27 +248,33 @@ a{
 /* Curriculum Section  START  */
 .curriculum{
 	flex-direction: column;
-	background-image: url('assets/bg.png');
+	align-items: center;
 	}
 
-.card-wrapper {
+.curriculum-card-wrapper {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-column-gap: 30px;
 	}
 
-.card {
+.curriculum-card {
 	border-radius: 1rem;
 	text-align: center;
 	padding: 2rem;
-	box-shadow: 0 0 20px #eee;
+	box-shadow: 10px 10px 20px #949494;
+		/* transition: .4s; */
 }
 
+.curriculum-card:hover {
+	/* transform: scale(1.1); */
+	/* background-color: tomato; */
+}
 .card-caption {
 	font-size: 1.5rem;
 	font-weight: 800;
 	line-height: 30px;
 	color: #202020;
+	margin-top: 40px;
 }
 
 .card-description {
@@ -226,19 +283,154 @@ a{
 .btn-card {
 	border: none;
 	background: transparent;
-	color: #64C8FF;
 }
 .btn-card a {
 	text-decoration: none;
 }
+#curriculum-card-kinder {
+	background-color: white;
+	background-image: linear-gradient(#b8dff3, white);
+}
+
+#curriculum-card-kinder:hover {
+	background-color: white;
+	background-image: linear-gradient(white, #b8dff3);
+	;
+}
+
+#btn-kinder a {
+	color: var(--clr-royalblue);
+}
+
+#card-elementary {
+	background-color: white;
+	background-image: linear-gradient(var(--clr-lightorange), white);
+}
+
+#card-elementary:hover {
+	background-color: white;
+	background-image: linear-gradient(white, var(--clr-lightorange));
+}
+
+#btn-elementary a {
+	color: var(--clr-orange);
+}
+
+#card-middle {
+	background-color: white;
+	background-image: linear-gradient(var(--clr-lightpurple), white);
+}
+
+#card-middle:hover {
+	background-color: white;
+	background-image: linear-gradient(white, var(--clr-lightpurple));
+}
+
+#btn-middle {
+	color: var(--clr-purple);
+}
 /* --------------------Curriculum Section  END----------------------------  */
 
+/* Story Section START */
+.story {
+	flex-direction: column;
+	/* justify-content: space-between; */
+	align-items: center;
+}
+
+.story-card-wrapper {
+
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 10px;
+}
+
+.story-right-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+}
+
+.story-left-container img,
+.story-right-img img {
+	width: 100%;
+	border-radius: 10px 10px 0px 0px;
+	/* border-radius: 5% 5% 0px 0px; */
+}
+
+.story-left-container,
+.story-right-card {
+	background-color: var(--clr-white);
+	border-radius: 10px;
+	box-shadow: 2px 5px 10px gray;
+}
+
+.story-left-description,
+.story-right-card-desc {
+	padding: 20px;
+	position: relative;
+
+}
+
+.set-story-btn-position {
+	position: absolute;
+	top: -30px;
+	left: 50px;
+
+}
+
+.story-card-wrapper {
+	margin-bottom: 40px;
+}
 
 
+/* Footer Section START */
+.footer {
+	background-color: var(--clr-royalblue);
+	margin-top: 0;
+	padding-top: 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 20px;
+	padding: 80px;
 
+}
 
-
-
+.footer-brand-info {
+	color: var(--clr-white);
+}
+	
+				.footer-brand .footer-brand,
+				.brand-name {
+					display: inline-block;
+				}
+	
+				.footer-menus ul {
+					list-style: none;
+				}
+	
+				.footer-menu {
+					text-decoration: none;
+					color: var(--clr-white);
+				}
+	
+				.footer-social-icons {
+					flex-direction: column;
+					color: var(--clr-white);
+					align-items: center;
+				}
+	
+				.social-icons {
+					flex-direction: row;
+					justify-content: space-evenly;
+					padding: 20px;
+				}
+	
+		/* -------------Footer Section END------------ */
+	
+	
+	
+		/* ------------------Story Section End----------------- */
 /* ===============================================================
 ----------------Responsive START
 =============================================================== */
@@ -251,7 +443,8 @@ a{
 	 .tabs{
 		display: none;
 	 }
-	 #tab-contact{
+#tab-contact,
+.brand-name {
 		display: none;
 	 }
 
@@ -280,9 +473,34 @@ a{
 	}
 
 
-.curriculum .card-wrapper{
+.curriculum .curriculum-card-wrapper {
 	grid-template-columns: 1fr;
+	grid-gap: 20px;
 }
+
+/* .story-card-wrapper{
+	display: grid;
+grid-template-columns: repeat(2, 1fr);
+} */
+
+.story-left-container {
+	display: none;
+}
+
+.story-card-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.footer {
+	grid-template-columns: 1fr;
+	grid-row-gap: 10px;
+		padding: 20px;
+}
+
 
 
 }

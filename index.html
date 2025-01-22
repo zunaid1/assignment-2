@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Kids EDUCATION</title>
+	<script src="https://kit.fontawesome.com/c53d808e7d.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="test.css">
 </head>
@@ -25,7 +26,7 @@
 		<li><a href="#" class="tab-admission">Admission</a></li>
 	</ul>
 	<button id="tab-contact" class="btn btn-orange"><a href="#">Contact</a></button>
-	<button id="menu-icon" class="hide btn"><a href="#">M</a></button>
+	<a href="#" id="menu-icon" class="hide"><i class="fa-solid fa-bars"></i></a>
 </nav>
 <!-- nav sectino END -->
 
@@ -52,45 +53,175 @@ age <span class="towards">towards vision</span>
 
 </header>
 
-<main class="section-default">
-	
-	<!-- section.curriculum>div.card*3>img.card-img+h3.card-caption+p.card-description+button.btn-card -->
-	<section class="curriculum flex dev-border">
+<main class="">
+	<div class="main-content-wrapper">
+		<!-- section.curriculum>div.card*3>img.card-img+h3.card-caption+p.card-description+button.btn-card -->
+	<section class="curriculum flex">
 		<h1 class="section-caption">Standard Curriculum</h1>
-		<div class="card-wrapper dev-border">
+		<div class="curriculum-card-wrapper">
 
 			<!-- card-01 -->
-		<div class="card dev-border">
+		<div id="curriculum-card-kinder" class="curriculum-card">
 			<img src="assets/kinder.png" alt="" class="card-img">
 			<h3 class="card-caption">Kinder (3-6) Years</h3>
 			<p class="card-description">Cum sociis natoque penatibus et magnis
 				dis parturient montes, nascetur ridiculus
 				mu sdis parturient</p>
-			<button class="btn-card"><a href="#">Read More</a></button>
+			<button id="btn-kinder" class="btn-card"><a href="#">Read More</a></button>
 		</div>
 
 		<!-- card-02 -->
-		<div class="card dev-border">
+		<div id="card-elementary" class="curriculum-card">
 			<img src="assets/elementary.png" alt="elementary image" class="card-img">
 			<h3 class="card-caption">Elementary School</h3>
 			<p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus debitis voluptates tenetur eligendi non aliquam ducimus, temporibus atque doloribus sed?</p>
-			<button class="btn-card"><a href="#">Read More</a></button>
+			<button id="btn-elementary" class="btn-card"><a href="#">Read More</a></button>
 		</div>
 
 		<!-- card-03 -->
-		<div class="card dev-border">
+		<div id="card-middle" class="curriculum-card">
 			<img src="assets/middle.png" alt="middle images" class="card-img">
 			<h3 class="card-caption">Middle (10-16) Years</h3>
 			<p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt modi quam rem eos cupiditate nemo deleniti dolorum officiis culpa provident.</p>
-			<button class="btn-card"><a href="#">Read More</a></button>
+			<button id="btn-middle" class="btn-card"><a href="#">Read More</a></button>
+			</div>
+			</div>
+			
+			<div class="arrow-wrapper">
+				<p><i class="arrow left"></i></p>
+				<!-- <p><i class="arrow right"></i></p> -->
+			</div>
+			<p style="font-size: x-large;">
+				ab
+			</p>
+			
+			</section>
+			
+			<!-- Story Section START  -->
+			<section class="story flex section-default">
+			
+			
+				<h1 class="section-caption">Our Stories</h1>
+			
+				<div class="story-card-wrapper dev-border">
+					<!-- Left Side of Story Section -->
+					<div class="story-left-container card-default">
+						<div class="story-left-img">
+							<img src="assets/story-1.png" alt="story1">
+						</div>
+						<div class="story-left-description">
+							<button class="btn btn-sayan set-story-btn-position"><a href="#">November 19, 2019</a></button>
+							<h3 class="card-caption">Middle (10-16) Years</h3>
+							<p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt modi quam
+								rem
+								eos cupiditate nemo deleniti dolorum officiis culpa provident.</p>
+						</div>
+					</div>
+			
+			
+					<!-- Right Side of Story Section -->
+					<div class="story-right-container">
+			
+			
+						<!-- Story  Card---01 -->
+						<div class="story-right-card ">
+							<div class="story-right-img">
+								<img src="assets/story-1.png" alt="story1">
+							</div>
+							<div class="story-right-card-desc">
+								<button class="btn btn-green set-story-btn-position"><a href="#">November 19, 2019</a></button>
+								<h3 class="card-caption">Middle (10-16) Years</h3>
+								<p class="card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+							</div>
+						</div>
+			
+			
+						<!-- Story  Card---02 -->
+						<div class="story-right-card">
+							<div class="story-right-img">
+								<img src="assets/story-1.png" alt="story1">
+							</div>
+							<div class="story-right-card-desc">
+								<button class="btn btn-purple set-story-btn-position"><a href="#">November 19, 2019</a></button>
+								<h3 class="card-caption">Middle (10-16) Years</h3>
+								<p class="card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+							</div>
+						</div>
+			
+			
+						<!-- Story Card---03 -->
+						<div class="story-right-card">
+							<div class="story-right-img">
+								<img src="assets/story-1.png" alt="story1">
+							</div>
+							<div class="story-right-card-desc">
+								<button class="btn btn-green set-story-btn-position"><a href="#">November 19, 2019</a></button>
+								<h3 class="card-caption">Middle (10-16) Years</h3>
+								<p class="card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+							</div>
+			
+						</div>
+			
+			
+						<!-- Story  Card---04 -->
+						<div class="story-right-card">
+							<div class="story-right-img">
+								<img src="assets/story-1.png" alt="story1">
+							</div>
+							<div class="story-right-card-desc">
+								<button class="btn btn-green set-story-btn-position"><a href="#">November 19, 2019</a></button>
+								<h3 class="card-caption">Middle (10-16) Years</h3>
+								<p class="card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+							</div>
+			
+						</div>
+
+
+</div>
 		</div>
 
+		<button class="btn btn-black"><a href="#">View All</a></button>
 
-		</div>
+</section>
+<!-- -----------Story Section END---------------  -->
 
-	</section>
-
+	</div>
 </main>
-<footer></footer>
+<footer class="footer">
+	<div class="footer-brand-info dev-border">
+
+		<div class="footer-brand">
+			<img class="brand-logo" src="assets/logo.png" alt="school logo">
+			<h1 class="brand-name">Kids <br> Education</h1>
+		</div>
+		<p class="footer-brand-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt cum optio
+			accusantium minima alias
+			officiis nemo non obcaecati consequatur cumque esse est, dolor totam nobis numquam fugit enim similique
+			facilis.</p>
+	</div>
+
+
+	<div class="footer-menus dev-border">
+		<ul>
+			<li><a class="footer-menu" href="#" target="_blank">About School</a></li>
+			<li><a class="footer-menu" href="#" target="_blank">Home</a></li>
+			<li><a class="footer-menu" href="#" target="_blank">About</a></li>
+			<li><a class="footer-menu" href="#" target="_blank">Facilities</a> </li>
+			<li><a class="footer-menu" href="#" target="_blank">Admission</a></li>
+		</ul>
+	</div>
+
+
+	<div class="footer-social-icons flex dev-border">
+		<h1 class="footer-icon-caption">Keep In Touch</h1>
+		<div class="social-icons flex dev-border">
+			<img src="assets/fb.png" alt="fb icon">
+			<img src="assets/google+.png" alt="google+ icon">
+			<img src="assets/twitter.png" alt="twitter icon">
+			<img src="assets/dribble.png" alt="dribble icon">
+		</div>
+	</div>
+
+</footer>
 </body>
 </html>
